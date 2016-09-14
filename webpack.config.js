@@ -14,6 +14,10 @@ var path = require("path");
 		        loaders: [{
 		            test: /\.scss$/,
 		            loaders: ["style", "css", "sass"]
-		        }]
+		        },
+                {
+                    test: /\.jpg|\.png|\.gif|.svg/,
+                    loaders: ["file"]
+                }]
 		    }     
  };
